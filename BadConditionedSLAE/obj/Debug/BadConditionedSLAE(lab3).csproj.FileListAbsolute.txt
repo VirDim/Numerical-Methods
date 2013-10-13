@@ -1,0 +1,9 @@
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\bin\Debug\BadConditionedSLAE.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\bin\Debug\BadConditionedSLAE.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\bin\Debug\CommonAlgorithm.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\bin\Debug\Lab1.exe
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\bin\Debug\CommonAlgorithm.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\bin\Debug\Lab1.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\obj\Debug\BadConditionedSLAE(lab3).csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\obj\Debug\BadConditionedSLAE.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\BadConditionedSLAE\obj\Debug\BadConditionedSLAE.pdb

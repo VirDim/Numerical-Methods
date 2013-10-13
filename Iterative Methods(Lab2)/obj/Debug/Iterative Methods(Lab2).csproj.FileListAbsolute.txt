@@ -1,0 +1,5 @@
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Iterative Methods(Lab2)\bin\Debug\Iterative Methods(Lab2).dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Iterative Methods(Lab2)\bin\Debug\Iterative Methods(Lab2).pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Iterative Methods(Lab2)\obj\Debug\Iterative Methods(Lab2).dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Iterative Methods(Lab2)\obj\Debug\Iterative Methods(Lab2).pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Iterative Methods(Lab2)\obj\Debug\Iterative Methods(Lab2).csprojResolveAssemblyReference.cache

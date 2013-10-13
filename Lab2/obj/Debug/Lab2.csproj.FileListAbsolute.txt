@@ -1,0 +1,11 @@
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\obj\Debug\Lab2.csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\obj\Debug\Lab2.Form1.resources
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\obj\Debug\Lab2.csproj.GenerateResource.Cache
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\bin\Debug\Lab2.exe
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\bin\Debug\Lab2.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\obj\Debug\Lab2.exe
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\obj\Debug\Lab2.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\bin\Debug\Iterative Methods(Lab2).dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Lab2\bin\Debug\Iterative Methods(Lab2).pdb
