@@ -6,23 +6,37 @@ using System.Threading.Tasks;
 
 namespace TestProject
 {
-    class Program
+    static class Program
     {
+        static double[,] matrixA = { { 1.03, 0.991 }, { 0.991, 0.943 } };//{ { 1.06, 0.994 }, { 0.991, 0.943 } };
+        static double[] vectorB = { 2.51, 2.41 };//{ 2.54, 2.44 };
+        static double[] vectorX0 = { 1, 1};
+
         static void Main(string[] args)
         {
-            method1();
+            reg1();
+            Console.WriteLine();
+            giv();
         }
         static void reg1()
         {
-            double[,] matrixA = { { 1.06, 0.994 }, { 0.991, 0.943 } };
-            double[] vectorB = { 2.54, 2.44 };
+            
 
-            BadConditionedSLAE.Regularization regul = new BadConditionedSLAE.Regularization(matrixA, vectorB, 10);
+            BadConditionedSLAE.Regularization regul = new BadConditionedSLAE.Regularization(matrixA, vectorB, 0.0000001);
             double[] vectorX = regul.GetVectorX();
 
             for (int i = 0; i < vectorB.Length; i++)
                 Console.Write(vectorX[i] + " ");
         }
+        static void giv()
+        {
+
+            BadConditionedSLAE.Givenson giv = new BadConditionedSLAE.Givenson(matrixA, vectorB);
+            double[] vectorX = giv.GetVectorX();
+            for (int i = 0; i < vectorB.Length; i++)
+                Console.Write(vectorX[i] + " ");
+        }
+
         static void method1()
         {
             int size = 2;

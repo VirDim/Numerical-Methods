@@ -25,7 +25,7 @@ namespace Gaus
 
 
         public Gaus(double[,] a_matrix, double[] b_vector)
-            : this(a_matrix, b_vector, 0.0001)
+            : this(a_matrix, b_vector, 0.00000001)
         {
         }
         public Gaus(double[,] a_matrix, double[] b_vector, double eps)

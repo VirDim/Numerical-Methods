@@ -114,5 +114,32 @@ namespace CommonAlgorithm
             else
                 throw new CommonAlgorithmException("Sizes do not match");
         }
+
+        /// <summary>
+        /// Get discrepancy
+        /// </summary>
+        /// <param name="matrixA"></param>
+        /// <param name="vectorB"></param>
+        /// <param name="vectorX"></param>
+        /// <returns>discrepancy</returns>
+        public static double GetDiscrepancy(double[,] matrixA, double[] vectorB, double[] vectorX)
+        {
+            int size = vectorB.Length;
+            int sizeCollumnMatrixA = matrixA.GetLength(1);
+            double discrepansy = 0;
+            double maxDiscrepansy = 0;
+            for (int i = 0; i < size; i++)
+            {
+                double sum = 0;
+                for (int j = 0; j < sizeCollumnMatrixA; j++)
+                {
+                    sum += matrixA[i, j] * vectorX[j];
+                }
+                discrepansy = Math.Abs(sum - vectorB[i]);
+                if (maxDiscrepansy < discrepansy)
+                    maxDiscrepansy = discrepansy;
+            }
+            return maxDiscrepansy;
+        }
     }
 }

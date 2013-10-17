@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BadConditionedSLAE
 {
-    class Givenson
+    public class Givenson
     {
         double[,]
             matrixA,
@@ -26,6 +26,8 @@ namespace BadConditionedSLAE
             this.matrixA = matrixA;
             this.vectorB = vectorB;
             vectorX = new double[size];
+            matrixAMod = new double[size, size];
+            vectorBMod = new double[size];
             Solve();
         }
 

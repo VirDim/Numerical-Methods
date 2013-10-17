@@ -10,3 +10,15 @@ C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\Tes
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\TestProject\bin\Debug\Lab1.exe
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\TestProject\bin\Debug\BadConditionedSLAE.pdb
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Lab1\TestProject\bin\Debug\Lab1.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\TestProject.exe.config
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\obj\Debug\TestProject.exe
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\obj\Debug\TestProject.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\TestProject.exe
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\TestProject.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\BadConditionedSLAE.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\CommonAlgorithm.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\Lab1.exe
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\BadConditionedSLAE.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\CommonAlgorithm.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\Lab1.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
