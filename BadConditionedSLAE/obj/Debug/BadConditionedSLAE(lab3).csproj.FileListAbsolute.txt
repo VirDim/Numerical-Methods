@@ -16,3 +16,10 @@ C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerica
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\obj\Debug\BadConditionedSLAE(lab3).csprojResolveAssemblyReference.cache
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\obj\Debug\BadConditionedSLAE.dll
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\obj\Debug\BadConditionedSLAE.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\Iterative Methods(Lab2).dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\Iterative Methods(Lab2).pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\ILCalc.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\ILCalc.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\ILCalc.xml
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\pl\ILCalc.resources.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\BadConditionedSLAE\bin\Debug\ru\ILCalc.resources.dll

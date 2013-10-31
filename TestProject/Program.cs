@@ -3,26 +3,97 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.CSharp;
+using System.CodeDom.Compiler;
+using System.Reflection;
+using ILCalc;
+using MathNet;
+using CommonAlgorithm;
+using AutoDiff;
+using NonlinearSolve_Lab4a_;
 
 namespace TestProject
 {
     static class Program
     {
-        static double[,] matrixA = { { 1.03, 0.991 }, { 0.991, 0.943 } };//{ { 1.06, 0.994 }, { 0.991, 0.943 } };
+        static double[,] matrixA = { { 1.03, 0.2973 }, { 0.991, 0.2829 } };//{ { 1.06, 0.994 }, { 0.991, 0.943 } };
         static double[] vectorB = { 2.51, 2.41 };//{ 2.54, 2.44 };
-        static double[] vectorX0 = { 1, 1};
+        static double[] vectorX0 = { 1, 1 };
 
         static void Main(string[] args)
         {
-            reg1();
-            Console.WriteLine();
-            giv();
+
+            TestChord();
+            TestTangent();
+            TestBisection();
+
+            //reg1();
+            //Console.WriteLine();
+            //giv();
         }
+
+        static void TestBisection()
+        {
+            Bisection bisection = new Bisection("Math.Pow(a,4)-4*Math.Pow(a,3)+3*Math.Pow(a,2)-2*a-2", -1, 0);
+            Console.WriteLine("x: {0} count {1} - половинное деление", bisection.X, bisection.Count);
+        }
+
+        static void TestTangent()
+        {
+            Tangent tangent = new Tangent("Math.Pow(a,4)-4*Math.Pow(a,3)+3*Math.Pow(a,2)-2*a-2", "4*Math.Pow(a,3)-12*Math.Pow(a,2)+6*a-2", -1, 0);
+            Console.WriteLine("x: {0} count {1} - касательные", tangent.X, tangent.Count);
+        }
+
+        static void TestChord()
+        {
+            Chord chord = new Chord("Math.Pow(a,4)-4*Math.Pow(a,3)+3*Math.Pow(a,2)-2*a-2", -1, 0);
+            Console.WriteLine("x: {0}, count: {1} - хорды", chord.X, chord.Count);
+        }
+
+        static double fsin(double x)
+        {
+            return Math.Sin(x);
+        }
+
+        static void func()
+        {
+            var calc = new CalcContext<double>("y");
+            var calc1 = new CalcContext<double>("x");
+            var calc2 = new CalcContext<double>("z");
+
+            calc.Arguments.Add("z");
+            calc1.Arguments.Add("z");
+            calc2.Arguments.Add("x");
+
+            calc.Functions.ImportBuiltIn();
+            calc1.Functions.ImportBuiltIn();
+            calc2.Functions.ImportBuiltIn();
+
+            string expression = "log(y/z)+1";
+            string expression1 = "0.4+z*z-2*x*x";
+            string expression2 = "2+0.05*x*z";
+
+            double x = 1, x0 = x, y = 2.2, y0, z = 2, z0, eps = 0.0001; int count = 0;
+            do
+            {
+                x0 = x;
+                y0 = y;
+                z0 = z;
+                x = calc.Evaluate(expression, new double[] { y0, z0 });
+                y = calc1.Evaluate(expression1, new double[] { x0, z0 });
+                z = calc2.Evaluate(expression2, new double[] { z0, x0 });
+                count++;
+            }
+            while (Math.Abs(x - x0) > eps && Math.Abs(y - y0) > eps && Math.Abs(z - z0) > eps);
+
+            Console.Write("x= " + x.ToString() + " y= " + y.ToString() + " z= " + z.ToString() + "\r\ncount= " + count + "\r\n");
+        }
+
         static void reg1()
         {
-            
 
-            BadConditionedSLAE.Regularization regul = new BadConditionedSLAE.Regularization(matrixA, vectorB, 0.0000001);
+
+            BadConditionedSLAE.Regularization regul = new BadConditionedSLAE.Regularization(matrixA, vectorB, 0.0001);
             double[] vectorX = regul.GetVectorX();
 
             for (int i = 0; i < vectorB.Length; i++)
@@ -47,30 +118,30 @@ namespace TestProject
             double[] b_New = new double[size];
             double[] x = new double[size];
 
-            
-                for (int z = 0; z < size - 1; z++)
+
+            for (int z = 0; z < size - 1; z++)
+            {
+                alpha = matr[0, 0] / (Math.Sqrt(Math.Pow(2, matr[0, 0]) + Math.Pow(2, matr[z + 1, 0])));
+                beta = matr[z + 1, 0] / (Math.Sqrt(Math.Pow(2, matr[0, 0]) + Math.Pow(2, matr[z + 1, 0])));
+
+                for (int i = 0; i < size; i++)
                 {
-                    alpha = matr[0, 0] / (Math.Sqrt(Math.Pow(2, matr[0, 0]) + Math.Pow(2, matr[z + 1, 0])));
-                    beta = matr[z + 1, 0] / (Math.Sqrt(Math.Pow(2, matr[0, 0]) + Math.Pow(2, matr[z + 1, 0])));
-
-                    for (int i = 0; i < size; i++)
+                    for (int j = 0; j < size; j++)
                     {
-                        for (int j = 0; j < size; j++)
-                        {
-                            if ((1 + i) % 2 != 0)
-                                matr_New[i, j] = alpha * matr[0, j] + beta * matr[1, j];
-                            else
-                                matr_New[i, j] = alpha * matr[1, j] - beta * matr[0, j];
-                        }
-                        if ((i + 1) % 2 != 0)
-                            b_New[i] = alpha * b[0] + beta * b[1];
+                        if ((1 + i) % 2 != 0)
+                            matr_New[i, j] = alpha * matr[0, j] + beta * matr[1, j];
                         else
-                            b_New[i] = alpha * b[1] - beta * b[0];
+                            matr_New[i, j] = alpha * matr[1, j] - beta * matr[0, j];
                     }
-                    matr_New[z + 1, z] = 0;
-
+                    if ((i + 1) % 2 != 0)
+                        b_New[i] = alpha * b[0] + beta * b[1];
+                    else
+                        b_New[i] = alpha * b[1] - beta * b[0];
                 }
-           
+                matr_New[z + 1, z] = 0;
+
+            }
+
 
 
 

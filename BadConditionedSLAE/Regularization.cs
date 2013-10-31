@@ -38,7 +38,7 @@ namespace BadConditionedSLAE
             vectorBMod = CommonAlgorithm.CommonAlgorithm.MultiplyVectorOnMatrix(matrixATranson, vectorB);//5.умножаем вектор на матрицу
             this.vectorX0 = new double[size];
             this.eps = eps;
-            solve();
+            NewSolve();
         }
 
         void solve()
@@ -46,7 +46,7 @@ namespace BadConditionedSLAE
             double[,] tempMatrixAMod = matrixAMod;
             do
             {
-                
+
                 //суть: представить в виде(At*A+a*E)VX = At*VB+aVX0
                 //4.слаживаем матрицы
                 for (int i = 0; i < size; i++)
@@ -57,16 +57,55 @@ namespace BadConditionedSLAE
                 for (int i = 0; i < size; i++)
                     vectorBMod[i] += vectorX0[i] * alpha;
 
-                Gaus.Gaus gaus = new Gaus.Gaus(matrixAMod, vectorBMod);
-                vectorX = gaus.XVector;
-                vectorX0 = vectorX;
-                alpha += 0.00001;
-                matrixEMod = CommonAlgorithm.CommonAlgorithm.MultiplyMatrixOnNumber(matrixE, alpha);
-                matrixAMod = tempMatrixAMod;
-                Console.WriteLine(CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX));
+                try
+                {
+                    Gaus.Gaus gaus = new Gaus.Gaus((double[,])matrixAMod.Clone(), (double[])vectorBMod.Clone());
+                    vectorX = gaus.XVector;
+                    vectorX0 = vectorX;
+                }
+                catch { }
+                finally
+                {
+                    alpha += 0.00001;
+                    matrixEMod = CommonAlgorithm.CommonAlgorithm.MultiplyMatrixOnNumber(matrixE, alpha);
+                    matrixAMod = tempMatrixAMod;
+                    Console.WriteLine(CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0));
+                }
             }
-            while (CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX) > eps);
+            while (CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0) > eps);
         }
+
+        void NewSolve()
+        {
+            do
+            {
+
+                double[,] tempMatrixAMod = matrixAMod;
+                for (int i = 0; i < size; i++)
+                    matrixAMod[i, i] += alpha;
+
+                for (int i = 0; i < size; i++)
+                    vectorBMod[i] += alpha * vectorX0[i];
+
+                try
+                {
+                    Gaus.Gaus gaus = new Gaus.Gaus((double[,])matrixAMod.Clone(), (double[])vectorBMod.Clone());
+                    
+                    vectorX = gaus.XVector;
+                    vectorX0 = vectorX;
+                }
+                catch { }
+                finally
+                {
+                    alpha += 0.00001;
+                    matrixEMod = CommonAlgorithm.CommonAlgorithm.MultiplyMatrixOnNumber(matrixE, alpha);
+                    matrixAMod = tempMatrixAMod;
+                    Console.WriteLine(CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0));
+                }
+            }
+            while (CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0) > eps);
+        }
+
 
         public double[] GetVectorX()
         {

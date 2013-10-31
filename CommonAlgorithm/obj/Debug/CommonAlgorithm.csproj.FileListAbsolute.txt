@@ -7,3 +7,4 @@ C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerica
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\CommonAlgorithm\obj\Debug\CommonAlgorithm.pdb
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\CommonAlgorithm\bin\Debug\CommonAlgorithm.dll
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\CommonAlgorithm\bin\Debug\CommonAlgorithm.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\CommonAlgorithm\obj\Debug\CommonAlgorithm.csprojResolveAssemblyReference.cache

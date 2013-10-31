@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ILCalc">
+      <HintPath>..\..\..\..\..\..\..\Desktop\ILCalc (.NET 2.0)\ILCalc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,10 @@
     <ProjectReference Include="..\CommonAlgorithm\CommonAlgorithm.csproj">
       <Project>{7c788e29-19c9-4e1e-a229-078936eb3533}</Project>
       <Name>CommonAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iterative Methods%28Lab2%29\Iterative Methods%28Lab2%29.csproj">
+      <Project>{522fd354-abd8-49df-ac75-913e8f792c59}</Project>
+      <Name>Iterative Methods%28Lab2%29</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lab1\Lab1.csproj">
       <Project>{ad418a88-09e2-4613-9637-3878889b9a72}</Project>

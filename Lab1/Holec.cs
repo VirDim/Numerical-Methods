@@ -28,7 +28,7 @@ namespace Lab1
 
         }
 
-        public double[,] X_vector { get; private set; }
+        public double[] X_vector { get; private set; }
 
         public void HolecSolve()
         {

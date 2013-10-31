@@ -32,8 +32,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoDiff">
+      <HintPath>..\packages\AutoDiff.1.0\lib\net40\AutoDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="ILCalc">
+      <HintPath>..\..\..\..\..\..\..\Desktop\ILCalc (.NET 2.0)\ILCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Iridium">
+      <HintPath>..\..\..\..\..\..\..\Desktop\mathnet-linqalgebra-master\lib\MathNet.Iridium\MathNet.Iridium.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.2.6.2\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.IO">
+      <HintPath>..\packages\MathNet.Numerics.2.6.2\lib\net40\MathNet.Numerics.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BadConditionedSLAE\BadConditionedSLAE%28lab3%29.csproj">
@@ -55,6 +73,18 @@
     <ProjectReference Include="..\CommonAlgorithm\CommonAlgorithm.csproj">
       <Project>{7c788e29-19c9-4e1e-a229-078936eb3533}</Project>
       <Name>CommonAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab4SimpleIterationForNonlinear\SimpleIterationForNonlinear.csproj">
+      <Project>{a2605e14-779e-420e-bf1f-13b5aabb1cf8}</Project>
+      <Name>SimpleIterationForNonlinear</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NonlinearSolve%28Lab4a%29\NonlinearSolve%28Lab4a%29.csproj">
+      <Project>{83303fa4-f8fa-4a9e-94f2-efdbc172bb67}</Project>
+      <Name>NonlinearSolve%28Lab4a%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TespAppCPP\TespAppCPP.vcxproj">
+      <Project>{74f47444-7e2f-4fcb-95ad-bbc992768c05}</Project>
+      <Name>Lab4Newton</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
