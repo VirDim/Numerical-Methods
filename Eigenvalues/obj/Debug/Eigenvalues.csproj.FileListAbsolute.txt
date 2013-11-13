@@ -1,0 +1,7 @@
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\obj\Debug\Eigenvalues.csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\bin\Debug\Eigenvalues.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\bin\Debug\Eigenvalues.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\bin\Debug\CommonAlgorithm.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\bin\Debug\CommonAlgorithm.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\obj\Debug\Eigenvalues.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\Eigenvalues\obj\Debug\Eigenvalues.pdb

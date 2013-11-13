@@ -74,6 +74,10 @@
       <Project>{7c788e29-19c9-4e1e-a229-078936eb3533}</Project>
       <Name>CommonAlgorithm</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Eigenvalues\Eigenvalues.csproj">
+      <Project>{7baf8bd7-42ca-490c-bc35-6bbce4e9cbef}</Project>
+      <Name>Eigenvalues</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lab4SimpleIterationForNonlinear\SimpleIterationForNonlinear.csproj">
       <Project>{a2605e14-779e-420e-bf1f-13b5aabb1cf8}</Project>
       <Name>SimpleIterationForNonlinear</Name>
@@ -81,6 +85,10 @@
     <ProjectReference Include="..\NonlinearSolve%28Lab4a%29\NonlinearSolve%28Lab4a%29.csproj">
       <Project>{83303fa4-f8fa-4a9e-94f2-efdbc172bb67}</Project>
       <Name>NonlinearSolve%28Lab4a%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QRExpansion\QRExpansion.csproj">
+      <Project>{837450f9-f4d4-45c5-b691-6e12ad2b7c0f}</Project>
+      <Name>QRExpansion</Name>
     </ProjectReference>
     <ProjectReference Include="..\TespAppCPP\TespAppCPP.vcxproj">
       <Project>{74f47444-7e2f-4fcb-95ad-bbc992768c05}</Project>

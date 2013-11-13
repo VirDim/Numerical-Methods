@@ -31,11 +31,11 @@ namespace BadConditionedSLAE
             this.vectorB = vectorB;
             size = vectorB.Length;
             this.alpha = 0;
-            matrixATranson = CommonAlgorithm.CommonAlgorithm.MatrixTranspose(matrixA); //1.получаем транспонированную матрицу 
-            matrixAMod = CommonAlgorithm.CommonAlgorithm.MatrixMultiplication(matrixA, matrixATranson);//2.умножаем матрицу на транспонированную
-            matrixE = CommonAlgorithm.CommonAlgorithm.GetIdentityMatrix(size);//получаем единичную матрицу
-            matrixEMod = CommonAlgorithm.CommonAlgorithm.MultiplyMatrixOnNumber(matrixE, alpha);//3.умножаем матрицу на альфу
-            vectorBMod = CommonAlgorithm.CommonAlgorithm.MultiplyVectorOnMatrix(matrixATranson, vectorB);//5.умножаем вектор на матрицу
+            matrixATranson = CommonAlgorithm.CommonAlgorithms.MatrixTranspose(matrixA); //1.получаем транспонированную матрицу 
+            matrixAMod = CommonAlgorithm.CommonAlgorithms.MatrixMultiplication(matrixA, matrixATranson);//2.умножаем матрицу на транспонированную
+            matrixE = CommonAlgorithm.CommonAlgorithms.GetIdentityMatrix(size);//получаем единичную матрицу
+            matrixEMod = CommonAlgorithm.CommonAlgorithms.MultiplyMatrixOnNumber(matrixE, alpha);//3.умножаем матрицу на альфу
+            vectorBMod = CommonAlgorithm.CommonAlgorithms.MultiplyVectorOnMatrix(matrixATranson, vectorB);//5.умножаем вектор на матрицу
             this.vectorX0 = new double[size];
             this.eps = eps;
             NewSolve();
@@ -67,12 +67,12 @@ namespace BadConditionedSLAE
                 finally
                 {
                     alpha += 0.00001;
-                    matrixEMod = CommonAlgorithm.CommonAlgorithm.MultiplyMatrixOnNumber(matrixE, alpha);
+                    matrixEMod = CommonAlgorithm.CommonAlgorithms.MultiplyMatrixOnNumber(matrixE, alpha);
                     matrixAMod = tempMatrixAMod;
-                    Console.WriteLine(CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0));
+                    Console.WriteLine(CommonAlgorithm.CommonAlgorithms.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0));
                 }
             }
-            while (CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0) > eps);
+            while (CommonAlgorithm.CommonAlgorithms.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0) > eps);
         }
 
         void NewSolve()
@@ -98,12 +98,12 @@ namespace BadConditionedSLAE
                 finally
                 {
                     alpha += 0.00001;
-                    matrixEMod = CommonAlgorithm.CommonAlgorithm.MultiplyMatrixOnNumber(matrixE, alpha);
+                    matrixEMod = CommonAlgorithm.CommonAlgorithms.MultiplyMatrixOnNumber(matrixE, alpha);
                     matrixAMod = tempMatrixAMod;
-                    Console.WriteLine(CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0));
+                    Console.WriteLine(CommonAlgorithm.CommonAlgorithms.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0));
                 }
             }
-            while (CommonAlgorithm.CommonAlgorithm.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0) > eps);
+            while (CommonAlgorithm.CommonAlgorithms.GetDiscrepancy(matrixAMod, vectorBMod, vectorX0) > eps);
         }
 
 

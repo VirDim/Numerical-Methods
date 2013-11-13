@@ -11,6 +11,9 @@ using MathNet;
 using CommonAlgorithm;
 using AutoDiff;
 using NonlinearSolve_Lab4a_;
+using SimpleIterationForNonlinear;
+using Eigenvalues;
+using QRExpansionNS;
 
 namespace TestProject
 {
@@ -22,14 +25,41 @@ namespace TestProject
 
         static void Main(string[] args)
         {
+           // double[,] matrix = new double[4, 4]
+           //{
+           //    {1,-1,-1,2},
+           //    {2,3,0,-4},
+           //    {1,1,-2,-2},
+           //    {1,1,0,-1}
+           //};
+            //double[,] matrix = { { 2, 2, -2 }, { 2, 5, -4 }, { -2, -4, 5 } };
+            //Laverrie lav = new Laverrie(matrix);
 
-            TestChord();
-            TestTangent();
-            TestBisection();
+            //double[] c = lav.VectorC;
 
-            //reg1();
-            //Console.WriteLine();
-            //giv();
+            //for (int i = 0; i < c.Length; i++)
+            //{
+            //    Console.WriteLine(c[i]);
+            //}
+            
+            double[][] matrix = new double[3][];
+            for(int i=0;i<3;i++)
+            {
+                matrix[i] = new double[3]{i+1,i+2,i+3};
+            }
+
+
+
+            QRExpansion qr = new QRExpansion(matrix);
+
+
+
+        }
+
+        static void SimpIter()
+        {
+            SimpleIterationForNonlinear.SimpleIterationForNonlinear si = new SimpleIterationForNonlinear.SimpleIterationForNonlinear("1-sin(y)/2", "0.7-cos(x-1)", 1e-5);
+            Console.WriteLine("x: {0} y: {1} count: {2}", si.X, si.Y, si.Count);
         }
 
         static void TestBisection()

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AutoDiff</id>
+    <version>1.0</version>
+    <title>AutoDiff</title>
+    <authors>Alex Shtof</authors>
+    <owners>Alex Shtof</owners>
+    <licenseUrl>http://autodiff.codeplex.com/license</licenseUrl>
+    <projectUrl>http://autodiff.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>High-performance and high-accuracy automatic function-differentiation library suitable for optimization and numeric computing.</description>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <references>
+      <reference file="AutoDiff.dll" />
+    </references>
+  </metadata>
+</package>

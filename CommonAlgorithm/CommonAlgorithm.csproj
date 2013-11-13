@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommonAlgorithm.cs" />
+    <Compile Include="CommonAlgorithms.cs" />
     <Compile Include="Derivable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

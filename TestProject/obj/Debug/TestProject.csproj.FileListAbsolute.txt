@@ -43,3 +43,7 @@ C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerica
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\NonlinearSolve(Lab4a).dll
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\Lab4SimpleIterationForNonlinear.pdb
 C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\NonlinearSolve(Lab4a).pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\Eigenvalues.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\Eigenvalues.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\QRExpansion.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\TestProject\bin\Debug\QRExpansion.pdb

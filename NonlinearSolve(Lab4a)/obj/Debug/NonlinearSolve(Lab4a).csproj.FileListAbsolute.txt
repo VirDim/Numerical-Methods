@@ -1,0 +1,6 @@
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\NonlinearSolve(Lab4a)\bin\Debug\NonlinearSolve(Lab4a).pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\NonlinearSolve(Lab4a)\obj\Debug\NonlinearSolve(Lab4a).csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\NonlinearSolve(Lab4a)\obj\Debug\NonlinearSolve(Lab4a).pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\NonlinearSolve(Lab4a)\bin\Debug\NonlinearSolve(Lab4a).dll.config
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\NonlinearSolve(Lab4a)\bin\Debug\NonlinearSolve(Lab4a).dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\NonlinearSolve(Lab4a)\obj\Debug\NonlinearSolve(Lab4a).dll

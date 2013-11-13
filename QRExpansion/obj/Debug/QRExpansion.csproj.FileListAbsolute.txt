@@ -1,0 +1,5 @@
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\QRExpansion\bin\Debug\QRExpansion.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\QRExpansion\bin\Debug\QRExpansion.pdb
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\QRExpansion\obj\Debug\QRExpansion.csprojResolveAssemblyReference.cache
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\QRExpansion\obj\Debug\QRExpansion.dll
+C:\Users\Dmitry\SkyDrive\University\3 semester\Numerical Methods\CSharp\Numerical Methods\QRExpansion\obj\Debug\QRExpansion.pdb
